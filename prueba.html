@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="prueba.css">
+</head>
+<body>
+        <h1>Este es el titulo de la prueba</h1>
+        
+    <nav>
+        <button class="nav-boton" onclick="accion()">hola</button>
+        <a class="nav-enlace desaparece" href="">inicio</a>
+        <a class="nav-enlace desaparece" href="">productos</a>
+        <a class="nav-enlace desaparece" href="">contacto</a>
+    </nav>
+
+    <section>
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, iusto adipisci ducimus modi ea officiis est sequi nostrum optio quasi in eos, ratione saepe pariatur aperiam, earum reiciendis laboriosam consequuntur.</p>
+        
+        <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ea fuga saepe harum amet quod molestiae voluptates facilis consectetur cupiditate unde quisquam, repudiandae earum, adipisci aliquam nihil dolorem repellendus illo?</p>
+        
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur mollitia aliquam deserunt facere totam rerum ut! Aperiam quae assumenda quos impedit quia fugiat a ducimus dolor. Quam aperiam aspernatur quos.</p>
+
+    </section>
+
+    <script>
+    function accion(){
+            // console.log('está funcionando mi boton');
+            var ancla = document.getElementsByClassName('nav-enlace');
+            for(var i = 0; i < ancla.length; i++){
+                ancla[i].classList.toggle('desaparece');
+            }
+        }
+    </script>
+    
+    
+
+</body>
+</html>
